@@ -31,7 +31,7 @@ $ch = curl_init();
 $headers = ["Content-Type: application/json"];
 
 
-curl_setopt($ch, CURLOPT_URL,"http://localhost/final/rest_service/login/");
+curl_setopt($ch, CURLOPT_URL,"http://localhost/final/rest_service/register/");
     
 
 
@@ -71,7 +71,7 @@ function doCookie($cookie_id,$remember){
     
     if(!isset($_COOKIE["user_id"])) {
     
-        if(remember == "ok"){
+        if(remember == 1){
           setcookie("user_id", $cookie_id, time() + (86400 * 30 * 12), "/"); // 86400 = 1 day  
         }else{
             setcookie("user_id", $cookie_id, time() + (1000), "/"); // 86400 = 1 day

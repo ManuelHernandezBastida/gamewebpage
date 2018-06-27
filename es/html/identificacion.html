@@ -56,8 +56,8 @@
                                   <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Usuario/Correo</p></div>
                                   <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input id="name" class="form-control" type ="text" name ="name" placeholder="Username" value=""><div id="div_nombre"></div></div>
                                   <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Introduce tu password</p></div>
-                                  <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input  id="password" class="form-control" type ="password" name ="password" placeholder="******" value=""><div id="div_password"></div></div>  
-                                  <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12"><input type="checkbox" name="remember" value="ok">Si deseas mantener la sesión iniciada. Politica de <a href="informacion.html">cookies, terminos de uso  y privacidad</a><br></div>
+                                  <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input  id="password" class="form-control" type ="password" name ="password" placeholder="******" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value=""><div id="div_password"></div></div>  
+                                  <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12"><input type="checkbox" name="remember" value="1">Si deseas mantener la sesión iniciada. Politica de <a href="informacion.html">cookies, terminos de uso  y privacidad</a><br></div>
                              </div>
                              <input class="form-control btn btn-primary button button_login"  type ="Submit" name ="" value="Enviar" >
                       </form>
@@ -70,14 +70,14 @@
                              <form id="register_form" name ="register_form" action=""  onsubmit="event.preventDefault(); createUser();" method="Post">
                                   <div class="row">
                                       <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Usuario</p></div>
-                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input class="form-control" type ="text" name ="nombre" placeholder="Username" value=""><div id="div_nombre_r"></div></div>
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input class="form-control" type ="text" name ="name" placeholder="Username" value=""><div id="div_nombre_r"></div></div>
                                       <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Introduce tu password</p></div>
-                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input  class="form-control" type ="password" name ="password"  placeholder="******" value=""><div id="div_password_r"></div></div> 
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input  class="form-control" type ="password" name ="password"  placeholder="******" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value=""><div id="div_password_r"></div></div> 
                                       <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Repite tu password</p></div>
-                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input class="form-control" type ="password" name ="cpassword" placeholder="******" value=""><div id="div_cpassword"></div></div>
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input class="form-control" type ="password" name ="cpassword" placeholder="******" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value=""><div id="div_cpassword"></div></div>
                                       <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Correo</p></div>
                                       <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input  class="form-control" type ="email" name ="email" placeholder="example@example.com" value=""><div id="div_email"></div></div>
-                                      <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12"><input type="checkbox" name="remember" value="ok" onclick="checkAddress(this)" >Si aceptas: Politica de <a href="informacion.html">cookies, terminos de uso  y privacidad</a><br></div>
+                                      <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12"><input type="checkbox" name="remember" value="1" onclick="checkAddress(this)" >Si aceptas: Politica de <a href="informacion.html">cookies, terminos de uso  y privacidad</a><br></div>
                                  </div>
                                  <input disabled="true" class="form-control btn btn-primary button button_register"  type ="Submit" name ="" id="registerButton"  value="Enviar" >
                         </form>

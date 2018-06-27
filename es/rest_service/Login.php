@@ -3,7 +3,7 @@ include "PHPfunctions.php";
 
 $name = $_POST["name"];
 $password = $_POST["password"];
-$remember = "no";
+$remember = 0;
 
 if(isset($_POST["remember"])){
   $remember =  $_POST["remember"];

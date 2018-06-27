@@ -1,12 +1,66 @@
 #informacion {
-     width: 100%;
+    
+    width: 100%;
     height: 100%;
-     background-image: url("../images/fondo_informacion.gif");
+    background-image: url("../images/fondo_registro2.gif");
     background-repeat: no-repeat;
     background-size: 100%;
-     background-position: top;
-    z-index: 100;
-  
-
+    background-position: top;
 
 }
+
+#links {
+    margin-top: 20%;
+    position: fixed;
+    margin-left: 5%;
+    
+}
+
+#informationPanel {
+    
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/UI%20board%20Medium%20%20parchment.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 10%;
+}
+
+p {
+    color:white;
+    text-align: center;
+    margin-top: 5% !important;
+    margin-left: 10% !important;
+    width: 80% !important;
+}
+ a:hover, a:active, a {
+    text-decoration-color: sandybrown!important;
+}
+ 
+h1:hover {
+    
+    color:sandybrown !important;
+}
+#title{
+    
+    margin-top: 10%;
+    
+}
+
+.button_back {
+    text-align: center;
+    width: 20%;
+    height: 90px;
+    border: 0;
+    background-color: transparent !important;
+    font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1vw;
+    margin-left: 39%;
+    margin-top:5%;
+    
+}
+
+

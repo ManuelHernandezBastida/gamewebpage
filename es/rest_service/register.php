@@ -5,7 +5,7 @@ $name = json_encode($_POST["name"]);
 $password = json_encode($_POST["password"]);
 $email = json_encode($_POST["email"]);
 
-$remember= "ok";
+$remember= 1;
 
 $array = [
     "name" => $name,
@@ -13,6 +13,8 @@ $array = [
     "email" => $email,
     "remember" => $remember,
 ];
+
+print_r($array);
 
 if(CompruebaQueNoEstenVacios($array)){
     

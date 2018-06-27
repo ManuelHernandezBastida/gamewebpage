@@ -10,6 +10,7 @@
   
 }
 
+
 #registroPanel {
     
     width: 100%;
@@ -51,21 +52,7 @@
 }
 
 
-.button {
-    
-    color: black;
-   
-   }
-.button:hover {
 
-    color: white;
-   
-   }
-.button:active {
-   
-    color: goldenrod;
-    
-   }
 
 #login {
     margin-left: 5%;

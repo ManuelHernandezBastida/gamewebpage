@@ -23,8 +23,39 @@
 
 
 }
+p {
+    text-align: center;
+}
 
+h1 {
+    margin-top: 15% !important;
+}
 
+.imagen_inicio{
+    animation: example2 12.0s forwards;
+    position: absolute; 
+    z-index: 100; 
+    margin-left: 25%; 
+    margin-bottom: 10%; 
+    width: 50%; 
+}
+.imagen_bubble {
+    margin-top:20%; 
+    width: 100%; 
+}
+.video_inicio{
+    opacity: 0.9; 
+    width:100%; 
+    height:100%;
+}
+
+#video_background {
+    border: 20px groove #ddd;
+    background-color: black; 
+    margin-top: 15%;
+    width:100%;
+    height:60%;
+}
 .image-container{
   height: 5em;
   width: 100%;
@@ -37,23 +68,23 @@
 
 }
 
-
-.descAtac{
+.imagen_pegi {
+    width: 30%;
 }
-#ataques h1 {
-}
-#ataquesRow {
-    
+.imagen_mahu {
+     width: 50%;
 }
 
-
+#adentrate{
+    font-family: 'JFRocOut', Arial, sans-serif; 
+    font-size: 4vw; 
+    margin-top: 10%; 
+}
 #ataques {
    margin-top: 5%;
    margin-left:5%;   
 }
-#caracteristicas{ 
-    
-}
+
 #personajeDesc {
     margin-top: 11%;
 }
@@ -61,11 +92,7 @@
    
    width:100%;  
 }
-.agitar{
-    -webkit-animation: shake 0.8s linear 2;
-    animation: shake 0.2s linear 2;    
-    
-}
+
 #chapa {
      width: 100%;
      height: auto;
@@ -84,63 +111,22 @@
     
 }
 
-aside {
-        margin-left: 90% ;
-        float: right;
-        position: fixed;
-      top: 30px;
-    }
+
 #facebook {
   width: 100%;
     z-index: 100;
+    
+   outline: none !important;
+   box-shadow: none !important;
 }
 #twitter {
   width: 100%;
     z-index: 100;
-}
-.indexPosition {
-    font-size: 1.5vw
-    text-shadow: 1px 1px 0 #000,
-        -1px 1px 0 #000,
-        1px -1px 0 #000,
-        -1px -1px 0 #000,
-        0px 1px 0 #000,
-        0px -1px 0 #000,
-        -1px 0px 0 #000,
-        1px 0px 0 #000,
-        2px 2px 0 #000,
-        -2px 2px 0 #000,
-        2px -2px 0 #000,
-        -2px -2px 0 #000,
-        0px 2px 0 #000,
-        0px -2px 0 #000,
-        -2px 0px 0 #000,
-        2px 0px 0 #000,
-        1px 2px 0 #000,
-        -1px 2px 0 #000,
-        1px -2px 0 #000,
-        -1px -2px 0 #000,
-        2px 1px 0 #000,
-        -2px 1px 0 #000,
-        2px -1px 0 #000,
-        -2px -1px 0 #000;
-    color: #fff;
-    margin-top: 2%;
-    text-align: center;
-    font-family: 'JFRocOut', Arial, sans-serif;
-font-weight:normal;
-font-style:normal;
-
+    
+   outline: none !important;
+   box-shadow: none !important;
 }
 
-header, footer, body {
-    color: white;
-    background-color: black;
-}
-#divFooter {
-    text-align: center; 
-   
-}
 
 
 .bubbleChart {
@@ -167,10 +153,10 @@ header, footer, body {
      font-family: 'JFRocOut', Arial, sans-serif;
     color:black;
 }
-.button {
+.button_play1 {
     text-align: center;
     width: 8%;
-    height: auto;
+    height: 70px;
     margin-left: 46%;
     margin-top: 29%;
     border:0;
@@ -180,141 +166,42 @@ header, footer, body {
     background-image: url("../images/BUTTON%20%20empty.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    
+    animation: example2 12.0s forwards; 
+    position: absolute; 
+    z-index: 100;
    font-size: 2vw;
    }
-.button:hover {
-  text-align: center;
-   width: 8%;
-    height: auto;
-    margin-left: 46%;
-    margin-top: 29%;
-    border:0;
-     color: saddlebrown;
-    background: transparent;
-     font-family: 'JFRocOut', Arial, sans-serif;
-    background-image: url("../images/BUTTON%20%20empty.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   font-size: 2vw;
-   }
-.button:active {
-    text-align: center;
-    width: 8%;
-    height: auto;
-    margin-left: 46%;
-    margin-top: 29%;
-    border:0;
-     color: white;
-    background: transparent;
-     font-family: 'JFRocOut', Arial, sans-serif;
-    background-image: url("../images/BUTTON%20%20empty.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   font-size: 2vw;
-   }
-
-
-.button2 {
+.button_play2 {
     text-align: center;
     width: 40%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border:0;
-     color: black;
-    background: transparent;
-     font-family: 'JFRocOut', Arial, sans-serif;
-    background-image: url("../images/BUTTON%20%20empty.png");
+    height: 80px;
+    border: 0;
+    background-color: transparent !important;
+    font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png") ;
     background-repeat: no-repeat;
     background-size: 100%;
-    
-   font-size: 2vw;
-   }
-.button2:hover {
-  text-align: center;
-   width: 40%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border:0;
-     color: white;
-    background: transparent;
-     font-family: 'JFRocOut', Arial, sans-serif;
-    background-image: url("../images/BUTTON%20%20empty.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   font-size: 2vw;
-   }
-.button2:active {
-    text-align: center;
-     width: 40%;
-    height: auto
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border:0;
-     color: white;
-    background: transparent;
-     font-family: 'JFRocOut', Arial, sans-serif;
-    background-image: url("../images/BUTTON%20%20empty.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   font-size: 2vw;
-   }
-.button3 {
-    text-align: center;
-    width: 40%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border:0;
-     color: black;
-    background: transparent;
-     font-family: 'Savour_Pinacolada', Arial, sans-serif;
-    background-image: url("../images/BUTTON%20%20empty.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
-   font-size: 2vw;
-   }
-.button3:hover {
-  text-align: center;
-   width: 40%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border:0;
-     color: white;
-    background: transparent;
-     font-family: 'Savour_Pinacolada', Arial, sans-serif;
-    background-image: url("../images/BUTTON%20%20empty.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   font-size: 2vw;
-   }
-.button3:active {
-    text-align: center;
-     width: 40%;
-    height: auto
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border:0;
-     color: white;
-    background: transparent;
-     font-family: 'Savour_Pinacolada', Arial, sans-serif;
-    background-image: url("../images/BUTTON%20%20empty.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   font-size: 2vw;
-   }
-@font-face {
-font-family: "Savour_Pinacolada";
-src: url("fonts/sp/Savour_Pinacolada.eot");
-src: url("fonts/sp/Savour_Pinacolada.woff") format("woff"),
-url("fonts/sp/Savour_Pinacolada.otf") format("opentype"),
-url("fonts/sp/Savour_Pinacolada.svg#filename") format("svg");
+    font-size: 2vw;
+    margin-left: 30%;
+    margin-top:16%;
 }
-@font-face {
-  font-family: 'JFRocOut';
-  src: url('fonts/jf/jfrocsol-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-   url('fonts/jf/jfrocsol-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
+
+.button_accept {
+    text-align: center;
+    width:20%;
+    height: 82px;
+    border: 0;
+    background-color: transparent !important;
+    font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1vw;
+    margin-left: 30%;
+    margin-bottom: 1%;
+    margin-top:1%;
+}
+ 
 
 /* The Modal (background) */
 .modal {
@@ -343,22 +230,13 @@ url("fonts/sp/Savour_Pinacolada.svg#filename") format("svg");
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-     font-family: 'Savour_Pinacolada', Arial, sans-serif;
+     font-family: 'JFRocOut', Arial, sans-serif;
     background-image: url("../images/fondo_nofondo.jpg");
     animation-duration: 0.4s;
     background-size:10%;
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-}
 
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
 
 /* The Close Button */
 .close {
@@ -392,31 +270,7 @@ url("fonts/sp/Savour_Pinacolada.svg#filename") format("svg");
     background-color: transparent;
 
 }
-@-webkit-keyframes shake {
-0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-}
-#informacion {
- background-image: url("http://tavmjong.free.fr/blog/wp-content/uploads/buttonA.svg");
-   background-color:transparent;
- 
-        background-size: 100%;
-        margin-left: 35%;
-        margin-bottom: 2%;
-        width: 200px;
-        height: 80px;
-        border:0;
-        
-}
+
 #logo {
 
         width:50px;
