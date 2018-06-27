@@ -1,0 +1,55 @@
+.centerPosition {
+    
+    font-size: 1.5vw
+    text-shadow: 1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        0px 1px 0 #000,
+        0px -1px 0 #000,
+        -1px 0px 0 #000,
+        1px 0px 0 #000,
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        0px 2px 0 #000,
+        0px -2px 0 #000,
+        -2px 0px 0 #000,
+        2px 0px 0 #000,
+        1px 2px 0 #000,
+        -1px 2px 0 #000,
+        1px -2px 0 #000,
+        -1px -2px 0 #000,
+        2px 1px 0 #000,
+        -2px 1px 0 #000,
+        2px -1px 0 #000,
+        -2px -1px 0 #000;
+    color: #fff;
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'JFRocOut', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    background: transparent !important
+
+}
+
+header, footer, body {
+    
+    color: white;
+    background-color: black;
+    
+}
+#divFooter {
+    
+    text-align: center; 
+   
+}
+
+@font-face {
+    
+  font-family: 'JFRocOut';
+  src: url('fonts/jf/jfrocsol-webfont.woff') format('woff'), 
+   url('fonts/jf/jfrocsol-webfont.ttf') format('truetype'); 
+}  

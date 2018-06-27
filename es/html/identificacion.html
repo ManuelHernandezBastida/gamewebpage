@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang = "es">
+    <head>
+
+        <title> Las aventuras de Mr. Mahuhemhaim</title>
+        <link rel="icon" type="image/png" href="../images/MrMahuhemhai.png">
+
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Manuel"/>
+        <meta name="author" content="Manuel"/>
+        <base href="—"/>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="../css/generalStyle.css"> 
+        <link rel="stylesheet" href="../css/indentificacionStyle.css"> 
+
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/identificacionJs.js"></script>
+
+    </head>
+    
+    <header>
+        
+        <audio autoplay>
+           <source src="../sounds/Epic%20Cinematic%202.mp3" type="audio/mpeg">
+          <p>Your browser does not support the audio element.</p> 
+        </audio>
+        
+    </header>
+    
+    <aside></aside>
+    
+    <body id="registro">
+        
+      <div class="container-fluid">
+            <div class= "row">
+                <div class ="col-xs-12 col-sm-12  col-md-12 col-lg-12">
+                    <h1 class ="centerPosition">Identificate forastero</h1>   
+                </div>
+            </div>
+      </div>
+        
+      <section>
+   
+         <div class="container" id="registroPanel">
+             <div class= "row">
+                <div id="login" class ="col-xs-5 col-sm-5  col-md-5 col-lg-5">
+
+                       <h1 class="centerPosition">Entra!</h1>
+                       <form id="login_form" name ="login_form" action=""  onsubmit="event.preventDefault(); checkUser();" method="Post">
+                              <div class="row">
+                                  <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Usuario/Correo</p></div>
+                                  <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input id="name" class="form-control" type ="text" name ="name" placeholder="Username" value=""><div id="div_nombre"></div></div>
+                                  <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Introduce tu password</p></div>
+                                  <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input  id="password" class="form-control" type ="password" name ="password" placeholder="******" value=""><div id="div_password"></div></div>  
+                                  <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12"><input type="checkbox" name="remember" value="ok">Si deseas mantener la sesión iniciada. Politica de <a href="informacion.html">cookies, terminos de uso  y privacidad</a><br></div>
+                             </div>
+                             <input class="form-control btn btn-primary button button_login"  type ="Submit" name ="" value="Enviar" >
+                      </form>
+
+                </div>
+                 
+                <div id = "register" class ="col-xs-5 col-sm-5  col-md-5 col-lg-5">
+                    
+                       <h1 class="centerPosition">Nuevo usuario</h1>
+                             <form id="register_form" name ="register_form" action=""  onsubmit="event.preventDefault(); createUser();" method="Post">
+                                  <div class="row">
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Usuario</p></div>
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input class="form-control" type ="text" name ="nombre" placeholder="Username" value=""><div id="div_nombre_r"></div></div>
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Introduce tu password</p></div>
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input  class="form-control" type ="password" name ="password"  placeholder="******" value=""><div id="div_password_r"></div></div> 
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Repite tu password</p></div>
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input class="form-control" type ="password" name ="cpassword" placeholder="******" value=""><div id="div_cpassword"></div></div>
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><p>Correo</p></div>
+                                      <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6"><input  class="form-control" type ="email" name ="email" placeholder="example@example.com" value=""><div id="div_email"></div></div>
+                                      <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12"><input type="checkbox" name="remember" value="ok" onclick="checkAddress(this)" >Si aceptas: Politica de <a href="informacion.html">cookies, terminos de uso  y privacidad</a><br></div>
+                                 </div>
+                                 <input disabled="true" class="form-control btn btn-primary button button_register"  type ="Submit" name ="" id="registerButton"  value="Enviar" >
+                        </form>
+                    
+                </div>
+                <div id="information" class="col-xs-12 col-sm-12  col-md-12 col-lg-12">
+                    
+                    <a href="../googlelogin/index.php"> o registrate con Google+</a>
+                    
+                    <p>Quae occaecat mentitum. An illum quibusdam, fore nescius o reprehenderit ex qui 
+                    proident non mentitum, te lorem varias varias eiusmod a pariatur sint te 
+                    litteris firmissimum ad fore praetermissum incididunt summis senserit, varias 
+                    senserit an expetendis, velit consectetur offendit legam litteris. Et summis nam 
+                    legam, de illum noster aut cupidatat et minim sed ingeniis, hic est irure quid 
+                    duis ut eiusmod illum nam ingeniis sempiternum te quo dolor admodum mandaremus, 
+                    litteris quid culpa ut elit, sint consequat ab admodum. Amet nostrud id eiusmod 
+                    sed varias aut probant. Fabulas legam arbitror o dolor non nam cillum 
+                    mandaremus. Sed fore irure cillum doctrina iis iis a cillum senserit o e sunt 
+                    sunt multos doctrina est quid de voluptate nam multos, deserunt de deserunt, 
+                    magna ut eiusmod et cillum, singulis ex quibusdam, non velit quibusdam.</p>
+                    
+                 </div>
+              </div>
+
+            </div>
+          
+        </section>
+
+    </body>
+   
+    <footer></footer>
+    
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang = "es">
+<head>
+    <meta charset="utf-8"/>
+    <base href="—"/>
+    <title> Las aventuras de Mr. Mahuhemhaim</title>
+    <link rel="icon" type="image/png" href="images/MrMahuhemhai.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1">
+    <meta name="description" content="Manuel"/>
+    <meta name="author" content="Manuel"/>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/indexStyle.css"> 
+    
+    
+    <script src="bubble-chart-master/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/general.js" defer></script>
+  <script src="bubble-chart-master/bower_components/d3/d3.min.js"></script>
+  <script src="bubble-chart-master/bower_components/d3-transform/src/d3-transform.js"></script>
+  <script src="bubble-chart-master/bower_components/cafej/src/ext-array.js"></script>
+  <script src="bubble-chart-master/bower_components/cafej/src/misc.js"></script>
+  <script src="bubble-chart-master/bower_components/cafej/src/micro-observer.js"></script>
+  <script src="bubble-chart-master/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="bubble-chart-master/src/bubble-chart.js"></script>
+  <script src="bubble-chart-master/src/plugins/central-click/central-click.js"></script>
+  <script src="bubble-chart-master/src/plugins/lines/lines.js"></script>
+  <script src="bubble-chart-master/test/test-bubble-chart.js"></script>
+
+</head>
+<header>
+    
+   
+  
+    
+    <div class="container-fluid" >
+        <div class= "row">
+             
+            <div class ="col-xs-12 col-sm-12  col-md-12 col-lg-12">
+             <img class ="img-responsive" style=" animation: example2 12.0s forwards; position: absolute; z-index: 100; margin-left: 25%; margin-bottom: 10%; width: 50%; " src="images/MrMahuhemhai.png">
+            </div>
+            <div class ="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                <button  style="animation: example2 12.0s forwards; position: absolute; z-index: 100;" class ="button" onclick="window.location.href='html/identificacion.html'">PLAY</button>
+            </div>
+            <video id="video_background" style="opacity: 0.9" width="100%" height="100%" autoplay loop>
+  <source src="images/Gif/wallpaper.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
+        </div>
+    </div>
+    
+</header>
+ 
+
+
+
+<body onload="cargar(); checkCookie(); " >
+      <!-- The Modal -->
+
+    
+ 
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <input type="image" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" id="logo">
+      <span id="close" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p style="text-align:center">Al navegar por este sitio aceptas nuestra politica de cookies aunque le des a la x en este modal</p>
+      <br>
+      
+    </div>
+    <div class="modal-footer">
+      <button id = "cerrar" class="button3" > Aceptar </button>
+    </div>
+  </div>
+
+</div>
+    <aside style="z-index: 100">
+
+       
+<div class="container-fluid" >
+        <div class= "row">
+             
+            <div class ="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                 <input type="image" id="facebook" src="images/facebook.png"  >
+             </div>
+                <div class ="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                 <input type="image" id="twitter"  src="images/twitter.png" >
+            </div>
+            
+        </div>
+    </div>
+    </aside>
+    <section id="chapa" >
+            <div class="container-fluid">
+                <div class= "row">
+   
+                    <div class ="col-xs-4 col-sm-4 col-md-4 col-lg-4" >  <h1  class ="indexPosition" style="margin-top: 15%">Solitario</h1>   <p class ="indexPosition" >Singulis est doctrina in quid qui arbitror ea quis, iis quo tamen vidisse, irure 
+                        officia sed transferrem ubi ex dolor ea veniam, vidisse veniam singulis 
+                        cernantur iis fugiat an ullamco ne quae, esse a tempor. Ad illum nulla an 
+                        eiusmod, nescius despicationes e nescius ne se dolore philosophari, quamquam ab 
+                        amet ullamco a qui velit arbitrantur, o quid elit ipsum iudicem te ad nisi 
+                        dolore id voluptate, ubi in sunt eiusmod. Ita quorum incurreret offendit se amet 
+                        efflorescere mentitum fore fabulas. Nulla de commodo ex culpa, laboris aute  .</p></div>
+                    <div class ="col-md-4 col-xs-4 col-sm-4 col-md-4 col-lg-4" >
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <video id="video_background" style="border: 20px groove #ddd;background-color: black; margin-top: 5%" width="100%" height="60%" autoplay controls>
+  <source src="video/promo.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                        </video>
+                          
+                    </div>
+                    <div class ="col-md-4 col-xs-4 col-sm-4 col-md-4 col-lg-4" >  <h1 class ="indexPosition" style="margin-top: 15%" >Por equipos</h1>   <p class ="indexPosition" style="
+    margin-bottom: 20%;">Ad minim aut elit, commodo sed eram cupidatat aut nam aut sempiternum de officia 
+                        qui quibusdam. Ita quem dolore hic appellat. Commodo do velit arbitror. Eram se 
+                        pariatur ut tamen est ita offendit tractavissent. Te incididunt fidelissimae, 
+                        cernantur efflorescere est laborum. Quorum a mentitum eu tamen ullamco nescius, 
+                        cillum praetermissum doctrina esse excepteur, ut nisi commodo relinqueret, 
+                        offendit quo admodum ut offendit fore quamquam aut qui irure amet a admodum, ut 
+                        malis mandaremus aliquip. Quamquam an nulla. Et commodo firmissimum hic se.
+                        
+                        
+                        
+                        
+                        
+                        </p></div>
+            
+                 <br>
+                    <br>
+                </div>
+            </div>
+    </section>
+    
+    <section id="fondo">
+             <div class="container-fluid">
+                <div class= "row">
+                    
+                    <div class ="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                        <div class="bubbleChart" id ="bubbleChart">
+                        </div>
+                    </div>
+                    <div class ="col-md-6 col-xs-6 col-sm-6 col-lg-6"  >
+                         
+                        <div  style="display: none" class= "row" id="interior">
+                            <div class ="col-md-6 col-xs-6 col-sm-6 col-lg-6"  id ="ataques"></div>
+                        <div class ="col-md-4 col-xs-4 col-sm-4 col-lg-4" ;>
+                              <div class= "row" >
+                                
+                                  <div class ="col-md-12 col-xs-12 col-sm-12 col-lg-12" id="personajeDesc">
+            
+                       </div>
+                                 <div class ="col-md-12 col-xs-12 col-sm-12 col-lg-12" id="caracteristicas">
+                                     </div>
+                            </div>
+                            </div>
+                      
+                
+                        </div>
+                        <div id ="logotipo" class ="col-xs-12 col-sm-12  col-md-12 col-lg-12">
+             <img class ="img-responsive" style=" margin-top:20%; width: 100%; " src="images/MrMahuhemhai.png">
+            </div>
+                    </div>
+                 
+                </div>
+            </div>
+    </section>
+
+</body>
+
+<footer>
+
+    <div class="container-fluid" id ="divFooter">
+        <div class= "row">
+            <div class ="col-md-3 col-xs-3 col-sm-3 col-lg-3" >
+                <img class ="img-responsive" style="   width: 50%;" src="images/MrMahuhemhai.png">
+            </div>
+             
+                    <div class ="col-md-3 col-xs-3 col-sm-3 col-lg-3" >
+                        <h1 style=" font-family: 'JFRocOut', Arial, sans-serif; font-size: 4vw; margin-top: 10%; ">ADENTRATE</h1>   
+                    </div>
+                    <div class ="col-md-3 col-xs-3 col-sm-3 col-lg-3" >
+                        <button class ="button2" style="" onclick="window.location.href='html/identificacion.html'" >PLAY</button>
+                    </div>
+            <div class ="col-md-3 col-xs-3 col-sm-3 col-lg-3" >
+                <img class ="img-responsive" style="   width: 30%;" src="images/pegi.png">
+            </div>
+            <div class ="col-md-12" >
+                <h5>© 2018 Mahohemhaim Games, Inc. Todos los derechos reservados aunque Mahohemhaim Games no es marca comercial o marca registrada de Mahohemhaim Games, Inc.</h5>   
+            </div>
+            <div class ="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <a href="html/informacion.html"  > POLÍTICA DE PRIVACIDAD</a> |
+                    <a href="html/informacion.html" > TÉRMINOS DE USO</a> 
+           
+            </div>
+            <div class ="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                <p style="text-align: center">Cogemos todos los datos que podemos y utilizamos <a href="html/informacion.html">cookies.</a></p>
+            </div>
+            
+        </div>
+        <br>
+    </div>
+    
+    <div class="container-fluid" id="divCookie">
+        <div class= "row">
+            <svg  width="0" height="0">
+
+    <defs>
+    <pattern id="pattern" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <image xlink:href="images/personaje.png" width="100" height="100" preserveAspectRatio="none"></image>
+    </pattern>
+  </defs>
+  <defs>
+    <pattern id="pattern1" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <image xlink:href="images/personaje1.png" width="100" height="100" preserveAspectRatio="none"></image>
+    </pattern>
+  </defs>
+  <defs>
+    <pattern id="pattern2" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <image xlink:href="images/personaje2.png" width="100" height="100" preserveAspectRatio="none"></image>
+    </pattern>
+  </defs>
+  <defs>
+    <pattern id="pattern3" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <image xlink:href="images/personaje3.png" width="100" height="100" preserveAspectRatio="none"></image>
+    </pattern>
+  </defs>
+<defs>
+    <pattern id="pattern4" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <image xlink:href="images/personaje4.png" width="100" height="100" preserveAspectRatio="none"></image>
+    </pattern>
+  </defs>
+    <defs>
+    <pattern id="pattern5" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <image xlink:href="images/personaje5.png" width="100" height="100" preserveAspectRatio="none"></image>
+    </pattern>
+  </defs>
+</svg>
+        </div>
+    </div>
+
+</footer>
+     
+</html>

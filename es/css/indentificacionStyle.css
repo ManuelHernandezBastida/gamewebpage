@@ -1,0 +1,86 @@
+#registro {
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/fondo_registro2.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    z-index: 100;
+  
+}
+
+#registroPanel {
+    
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/UI%20board%20Medium%20%20parchment.png");
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    
+}
+.button_login {
+    text-align: center;
+    width: 40%;
+    height: 75px;
+    border: 0;
+    background-color: transparent !important;
+    font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1vw;
+    margin-left: 30%;
+    margin-top:20%;
+}
+
+.button_register {
+    text-align: center;
+    width: 40%;
+    height: 75px;
+    border: 0;
+    background-color: transparent !important;
+    font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1vw;
+    margin-left: 30%;
+    margin-top:7.5%;
+    
+}
+
+
+.button {
+    
+    color: black;
+   
+   }
+.button:hover {
+
+    color: white;
+   
+   }
+.button:active {
+   
+    color: goldenrod;
+    
+   }
+
+#login {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+#register {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+#information{
+    text-align: center;
+    margin-top: 2%;
+}
+ #information p {
+    width: 90%;
+    margin-left: 5%;
+}

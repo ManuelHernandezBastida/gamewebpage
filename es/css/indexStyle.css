@@ -1,0 +1,427 @@
+#divGif {
+    width: 100%;
+    height: 500px;
+    background-size: 100%;  
+    
+    position: relative;
+    z-index: 100;
+    -webkit-filter: grayscale(50%);
+}
+@keyframes example2 {
+    0%   { left:0px; top:0px; opacity:0.0;}
+    99%  { opacity:0.0;}
+    100% {  top:0px; opacity:1.0;}
+}
+#fondo {
+     width: 100%;
+    height: 100%;
+     background-image: url("../images/fondo_jungla.gif");
+    background-size: contain;
+       background-repeat: no-repeat;
+    z-index: 100;
+  
+
+
+}
+
+
+.image-container{
+  height: 5em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.descAtac{
+}
+#ataques h1 {
+}
+#ataquesRow {
+    
+}
+
+
+#ataques {
+   margin-top: 5%;
+   margin-left:5%;   
+}
+#caracteristicas{ 
+    
+}
+#personajeDesc {
+    margin-top: 11%;
+}
+.ataqueGif {
+   
+   width:100%;  
+}
+.agitar{
+    -webkit-animation: shake 0.8s linear 2;
+    animation: shake 0.2s linear 2;    
+    
+}
+#chapa {
+     width: 100%;
+     height: auto;
+     background-image: url("../images/fondo_nofondo2.jpg");
+    background-size: contain;
+    
+}
+
+.panel {
+     width: 100%;
+    height: 1350px;
+     background-image: url("../images/UI%20board%20Large%20%20parchment.png");
+    background-repeat: no-repeat;
+     background-size: 100%; 
+   
+    
+}
+
+aside {
+        margin-left: 90% ;
+        float: right;
+        position: fixed;
+      top: 30px;
+    }
+#facebook {
+  width: 100%;
+    z-index: 100;
+}
+#twitter {
+  width: 100%;
+    z-index: 100;
+}
+.indexPosition {
+    font-size: 1.5vw
+    text-shadow: 1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        0px 1px 0 #000,
+        0px -1px 0 #000,
+        -1px 0px 0 #000,
+        1px 0px 0 #000,
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        0px 2px 0 #000,
+        0px -2px 0 #000,
+        -2px 0px 0 #000,
+        2px 0px 0 #000,
+        1px 2px 0 #000,
+        -1px 2px 0 #000,
+        1px -2px 0 #000,
+        -1px -2px 0 #000,
+        2px 1px 0 #000,
+        -2px 1px 0 #000,
+        2px -1px 0 #000,
+        -2px -1px 0 #000;
+    color: #fff;
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'JFRocOut', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+
+}
+
+header, footer, body {
+    color: white;
+    background-color: black;
+}
+#divFooter {
+    text-align: center; 
+   
+}
+
+
+.bubbleChart {
+  width: 100%;
+  margin: 0 auto;
+  background: transparent !important;
+    float:left;
+}
+.bubbleChart svg{
+  background: transparent !important;
+}
+
+    
+#interior {
+      width: 100%;
+    height: 70%;
+    margin-top: 20%;
+    
+    background-image: url("../images/UI%20board%20Medium%20%20parchment.png");
+    background-repeat: no-repeat;
+        background-size: 100%;
+   
+    font-size: 0.9vw;
+     font-family: 'JFRocOut', Arial, sans-serif;
+    color:black;
+}
+.button {
+    text-align: center;
+    width: 8%;
+    height: auto;
+    margin-left: 46%;
+    margin-top: 29%;
+    border:0;
+     color: black;
+    background: transparent;
+     font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+   font-size: 2vw;
+   }
+.button:hover {
+  text-align: center;
+   width: 8%;
+    height: auto;
+    margin-left: 46%;
+    margin-top: 29%;
+    border:0;
+     color: saddlebrown;
+    background: transparent;
+     font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   font-size: 2vw;
+   }
+.button:active {
+    text-align: center;
+    width: 8%;
+    height: auto;
+    margin-left: 46%;
+    margin-top: 29%;
+    border:0;
+     color: white;
+    background: transparent;
+     font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   font-size: 2vw;
+   }
+
+
+.button2 {
+    text-align: center;
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border:0;
+     color: black;
+    background: transparent;
+     font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+   font-size: 2vw;
+   }
+.button2:hover {
+  text-align: center;
+   width: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border:0;
+     color: white;
+    background: transparent;
+     font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   font-size: 2vw;
+   }
+.button2:active {
+    text-align: center;
+     width: 40%;
+    height: auto
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border:0;
+     color: white;
+    background: transparent;
+     font-family: 'JFRocOut', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   font-size: 2vw;
+   }
+.button3 {
+    text-align: center;
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border:0;
+     color: black;
+    background: transparent;
+     font-family: 'Savour_Pinacolada', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+   font-size: 2vw;
+   }
+.button3:hover {
+  text-align: center;
+   width: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border:0;
+     color: white;
+    background: transparent;
+     font-family: 'Savour_Pinacolada', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   font-size: 2vw;
+   }
+.button3:active {
+    text-align: center;
+     width: 40%;
+    height: auto
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border:0;
+     color: white;
+    background: transparent;
+     font-family: 'Savour_Pinacolada', Arial, sans-serif;
+    background-image: url("../images/BUTTON%20%20empty.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   font-size: 2vw;
+   }
+@font-face {
+font-family: "Savour_Pinacolada";
+src: url("fonts/sp/Savour_Pinacolada.eot");
+src: url("fonts/sp/Savour_Pinacolada.woff") format("woff"),
+url("fonts/sp/Savour_Pinacolada.otf") format("opentype"),
+url("fonts/sp/Savour_Pinacolada.svg#filename") format("svg");
+}
+@font-face {
+  font-family: 'JFRocOut';
+  src: url('fonts/jf/jfrocsol-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('fonts/jf/jfrocsol-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+   
+    margin: auto;
+    padding: 0;
+    font-size: 20px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+     font-family: 'Savour_Pinacolada', Arial, sans-serif;
+    background-image: url("../images/fondo_nofondo.jpg");
+    animation-duration: 0.4s;
+    background-size:10%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold 2px;
+    text-shadow:black 0 5px 3px;
+    
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+   text-shadow:transparent 0 5px 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: transparent;
+  
+    
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: transparent;
+
+}
+@-webkit-keyframes shake {
+0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+#informacion {
+ background-image: url("http://tavmjong.free.fr/blog/wp-content/uploads/buttonA.svg");
+   background-color:transparent;
+ 
+        background-size: 100%;
+        margin-left: 35%;
+        margin-bottom: 2%;
+        width: 200px;
+        height: 80px;
+        border:0;
+        
+}
+#logo {
+
+        width:50px;
+        height:50px;
+        float:left;
+        margin-top:1%;
+       
+}
