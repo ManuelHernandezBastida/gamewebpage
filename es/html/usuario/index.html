@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--le decimos a nuestra página que vamos a utilizar el módulo app que hemos creado-->
+<html ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> Las aventuras de Mr. Mahuhemhaim</title>
+    <link rel="icon" type="image/png" href="../../images/MrMahuhemhai.png">
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <!--cdn con la version 1.2.4 de angular.js-->
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+  <!--cdn con el modulo ngRoute de angular-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+<link rel="stylesheet" href="../../css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="../../css/generalStyle.css"> 
+        <link rel="stylesheet" href="../../css/loginStyle.css"> 
+<link rel="stylesheet" href="../../css/indentificacionStyle.css"> 
+<link rel="stylesheet" href="../../css/informacionStyle.css"> 
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="../../js/general.js"></script>
+        <script src="../../js/identificacionJs.js"></script>
+        <script src="../../js/informationJs.js"></script>
+  <!--archivo app.js, donde hemos definido nuestro modulo app-->
+  <script type='text/javascript' src="../../js/app.js"></script>
+</head>
+    <header>
+         
+        </header>
+    <body id="informacion" >
+      <!--directiva ng-view, aquí cargara todo el contenido-->
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-md-3 col-lg-3">
+                    <div id="links">
+                          <a href="#/"><h1 class="centerPosition">USUARIO</h1></a>
+                           <a href="#/estadisticas"><h1 class="centerPosition">ESTADISTICAS</h1></a>
+                          <a href="#/pay"><h1 class="centerPosition">Donaciones</h1></a>
+                        <a href="#/game"><h1 class="centerPosition">GAME</h1></a>
+                         
+                          <a href="../../index.html"><h1 class="centerPosition">BACK</h1></a>
+                    </div>   
+                </div>
+                
+                <div class="col-md-8 ">
+                    <div ng-view></div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+    </body>
+    
+    <footer></footer>
+</html>

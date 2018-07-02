@@ -1,0 +1,12 @@
+name: trabajo_shiny_version_1
+title: trabajo_shiny_version_1
+username:
+account: gamestatistics
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 371094
+bundleId: 1459296
+url: https://gamestatistics.shinyapps.io/trabajo_shiny_version_1/
+when: 1530452194.5701
+asMultiple: FALSE
+asStatic: FALSE

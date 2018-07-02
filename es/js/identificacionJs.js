@@ -1,12 +1,14 @@
 function checkAddress(checkbox)
 {
+    
     if (checkbox.checked)
     {
-        document.getElementById("registerButton").disabled = false;
+        console.log("false");
+        document.getElementById("registerButton").disabled = "false";
         
     }else {
-        
-        document.getElementById("registerButton").disabled = true;
+        console.log("true");
+        document.getElementById("registerButton").disabled = "true";
     }
 }
 

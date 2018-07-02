@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang = "es">
+    <head>
+
+        <title> Las aventuras de Mr. Mahuhemhaim</title>
+        <link rel="icon" type="image/png" href="../images/MrMahuhemhai.png">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Manuel"/>
+        <meta name="author" content="Manuel"/>
+        <meta charset="utf-8"/>
+        <base href="—"/>
+
+<link rel="stylesheet" href="../css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="../css/generalStyle.css"> 
+        <link rel="stylesheet" href="../css/loginStyle.css"> 
+
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/identificacionJs.js"></script>
+        <script src="../js/informationJs.js"></script>
+    </head>
+    
+    <header></header>
+    
+    <body id="informacion">
+ <div class = "row">
+     
+     <div class="col-md-4">
+               <section>
+        
+        <div id="links">
+              <a id="login" onclick="checkThisLinks(this.id)"><h1 class="centerPosition">PANEL DE LOGIN</h1></a>
+              <a id="register" onclick="checkThisLinks(this.id)"><h1 class="centerPosition">PANEL DE REGISTRO</h1></a>
+              <a href="../index.html"><h1 class="centerPosition">BACK</h1></a>
+        </div>   
+            
+        </section>
+     </div>
+     
+     <div class="col-md-8 ">
+        <section >
+             <div id="informationPanel" hidden class="container" style="animation: example2 1.0s forwards;">
+                 <div class= "row">
+                <div id="loginPanel" hidden class ="col-md-6" >
+
+                        <form id="login_form" name ="login_form" action=""  onsubmit="event.preventDefault(); checkUser();" method="Post">
+                         
+                                  <p class="centerPosition">Introduce tu Usuario/Correo</p>
+                                  <input  id="name" class="form-control responsive" type ="text" name ="name" placeholder="Username" value="">
+                                  <p class="centerPosition">Introduce tu password</p>
+                                  <input  id="password" class="form-control responsive" type ="password" name ="password" placeholder="******" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="">
+                                  <br>
+                                 <input type="checkbox" name="remember" value="1">Si deseas mantener la sesión iniciada. Politica de <a href="informacion.html">cookies, terminos de uso  y privacidad</a>
+                            
+                            <br>
+                             
+                              
+                      </form>
+<input class="button button_login "  type ="Submit" name ="" value="Enviar" >
+                </div>
+                 
+                <div id = "registerPanel" hidden class ="col-md-6">
+                    
+                             <form id="register_form"  name ="register_form" action=""  onsubmit="event.preventDefault(); createUser();" method="Post">
+                                  <p  class="centerPosition">Usuario</p>
+                                      <input class="form-control" type ="text" name ="name" placeholder="Username" value="">
+                                        <p  class="centerPosition">Password</p>
+                                      <input  class="form-control" type ="password" name ="password"  placeholder="******" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="">
+                                      <p  class="centerPosition">Repite password</p>
+                                      <input class="form-control" type ="password" name ="cpassword" placeholder="******" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value="">
+                                      <p  class="centerPosition">Correo</p>
+                                      <input  class="form-control" type ="email" name ="email" placeholder="example@example.com" value="">
+                                 <br>
+                                      <input  type="checkbox" name="remember" value="1" onclick="checkAddress(this)" >Si aceptas: Politica de <a href="informacion.html">cookies, terminos de uso  y privacidad</a><br>
+                                
+                                 <a href="../googlelogin/index.php"> o registrate con Google+</a>
+                                 <br>
+                                 
+                        </form>
+                    <button disabled class="button button_register"  type ="submit" name ="" id="registerButton"  value="Submit" >Enviar</button>
+                    
+                </div>
+                
+                    
+                    
+       
+              </div>
+
+                 
+            </div>
+        </section>
+</div>
+     
+       </div> 
+    </body>
+
+    <footer></footer>
+     
+</html>

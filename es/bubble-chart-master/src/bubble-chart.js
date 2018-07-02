@@ -226,10 +226,11 @@
          
           document.getElementById('logotipo').style.display= 'none' ;
           document.getElementById('interior').style.display= 'flex' ;
+          document.getElementById("interior").removeAttribute("hidden");
           preparaCaracteristicas(d.item);
-          preparaAtaques2(d.item.ataques);
+          muestraAtaques(d.item.ataques);
           preparaPerDes(d.item);
-            document.getElementById("interior").classList.toggle('agitar').classList.toggle('agitar');
+          reset_animation();
  
           
       });
@@ -256,7 +257,9 @@ return d3.svg.BubbleChart;
 
 function preparaCaracteristicas(item){
       var divCar = document.getElementById("caracteristicas");
-     divCar.innerHTML=' <h1 >Caracteristicas</h1>';
+    var h4name = document.getElementById("name");
+    h4name.innerHTML=item.text;
+    divCar.innerHTML="";
           if(typeof item.properties != "undefined"){
           
             item.properties.forEach(function(valor, indice, array){
@@ -272,108 +275,49 @@ function preparaCaracteristicas(item){
         };
 }
 function preparaPerDes(item){
-    var divDesc = document.getElementById("personajeDesc");
-    divDesc.innerHTML = ' <h1 >'+item.text+'</h1>';
-    
-   
-    var nameP = document.createElement('p');
+    var divDesc = document.getElementById("history");
+    var nameP = document.getElementById('rol');
     nameP.innerHTML = item.rol;
-    
-    
-    divDesc.appendChild(nameP);
-    
+  
 
 
 }
-function preparaAtaques(item){
-    var divAtaques = document.getElementById("ataques");
-    divAtaques.innerHTML = ' <h1 ">Ataques</h1>';
-    
-    var divRow = document.createElement('div');
-    divRow.classList.add('row');
-    divRow.id = "ataquesRow";
+function muestraAtaques(item){
+
+    var contador = 0;
+    var at;
+    console.log(item);
     item.forEach(function(valor, indice, array){
-       
-    var divCol1 = document.createElement('div');
-    divCol1.classList.add('col-md-4');
-        divCol1.classList.add('col-xs-4');
-    divCol1.classList.add('col-sm-4');
-    divCol1.classList.add('col-lg-4');
-    var nameP = document.createElement('p');
-    nameP.innerHTML = valor.text;
+
+        contador++;
+        if(contador==1){
+      var at = document.getElementById("at1");
+
+        }else if (contador == 2){
+    var at= document.getElementById("at2");
+        }else {
+    var at = document.getElementById("at3");
+        }
+     
+    at.src =valor.properties[0].img;
+    at.alt=valor.properties[0].gif; 
+    at.setAttribute("onclick", 'muestraElAtaque(this.alt)'); 
     
-    var imag1 = document.createElement("img");
-    //imag1.setAttribute("type", "image");
-    imag1.src=valor.properties[0].img;
-    imag1.id=valor.properties[0].gif;
-          if(typeof valor.properties[0].desc != "undefined"){
-          imag1.alt=valor.properties[0].desc;
-      }
-    imag1.setAttribute("onclick", 'muestraElAtaque(this.id, this.alt)'); 
-   imag1.classList.add('img-responsive');
-    imag1.style="width:100%";
-    divCol1.appendChild(nameP);
-    divCol1.appendChild(imag1);
-    divRow.appendChild(divCol1);
-         }
-      ); }
-function preparaAtaques2(item){
-    var divAtaques = document.getElementById("ataques");
-    divAtaques.innerHTML = ' <h1 ">Ataques</h1>';
-    
-    var divRow = document.createElement('div');
-    divRow.classList.add('row');
-    divRow.id = "ataquesRow";
-    item.forEach(function(valor, indice, array){
-       
-    var divCol1 = document.createElement('div');
-    divCol1.classList.add('col-md-3');
-        divCol1.classList.add('col-xs-3');
-    divCol1.classList.add('col-sm-3');
-    divCol1.classList.add('col-lg-3');
-    var nameP = document.createElement('p');
-    nameP.innerHTML = valor.text;
-    
-     divCol1.style ="background-image: url("+valor.properties[0].img+"); max-width: 100%; width: auto;";
-    divCol1.id=valor.properties[0].gif;
-          if(typeof valor.properties[0].desc != "undefined"){
-          divCol1.alt=valor.properties[0].desc;
-      }
-    divCol1.setAttribute("onclick", 'muestraElAtaque(this.id, this.alt)'); 
-   divCol1.classList.add('image-container');
-    
-    divCol1.appendChild(nameP);
-    divRow.appendChild(divCol1);
          }
       ); 
-        
+    contador=0;
 
-    var divCol4 = document.createElement('div');
-      
-    
-        divCol4.classList.add('col-md-7');
-    divCol4.classList.add('col-xs-7');
-    divCol4.classList.add('col-sm-7');
-    divCol4.classList.add('col-lg-7');
-    divCol4.classList.add('image-container');
-        divCol4.id="ataqueGif";
-     divRow.appendChild(divCol4);
-    divAtaques.appendChild(divRow);
 }
-function muestraElAtaque(direccion,desc){
-    var divImag = document.getElementById("ataqueGif");
-    divImag.innerHTML="";
-    var imag1 = document.createElement("video");
-    imag1.setAttribute("type", "video/webm");
+function muestraElAtaque(direccion){
+    var imag1 = document.getElementById("ataque");
     imag1.autoplay = true;
-    imag1.src=direccion;  
-    imag1.style =" margin-top:10px; max-width: 90%!important; height: 80!important;";
-    divImag.appendChild(imag1);
-     var nameP = document.createElement('p');
-    nameP.innerHTML = desc;
-    divImag.appendChild(nameP);
+    imag1.src=direccion; 
+   
 }
-
+function reset_animation() {
+  var el = document.getElementById('interior');
+ el.classList.toggle('agitar');
+}
 /**
  * Settings of bubble chart
  *

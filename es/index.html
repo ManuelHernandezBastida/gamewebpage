@@ -41,7 +41,7 @@ initial-scale=1">
                  <img class ="img-responsive imagen_inicio" src="images/MrMahuhemhai.png">
                 </div>
                 <div class ="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-                    <button class ="button_play1 button" onclick="window.location.href='html/identificacion.html'">PLAY</button>
+                    <button class ="button_play1 button" onclick="window.location.href='html/login.html'">PLAY</button>
                 </div>
                 <video class="video_inicio" autoplay loop>
                     <source src="images/Gif/wallpaper.webm" type="video/webm">
@@ -139,33 +139,53 @@ initial-scale=1">
              <div class="container-fluid">
                 <div class= "row">
                     
-                    <div class ="col-md-6 col-xs-6 col-sm-6 col-lg-6">
-                        <div class="bubbleChart" id ="bubbleChart">
-                        </div>
-                    </div>
-                    <div class ="col-md-6 col-xs-6 col-sm-6 col-lg-6"  >
+                    <div class ="col-md-6 col-xs-6 col-sm-6 col-lg-6"><div class="bubbleChart" id ="bubbleChart"></div></div>
+                    <div hidden class ="col-md-6 col-xs-6 col-sm-6 col-lg-6" id="interior">
                          
-                        <div  style="display: none" class= "row" id="interior">
-                            <div class ="col-md-6 col-xs-6 col-sm-6 col-lg-6"  id ="ataques"></div>
-                        <div class ="col-md-4 col-xs-4 col-sm-4 col-lg-4" ;>
-                              <div class= "row" >
-                                
-                                  <div class ="col-md-12 col-xs-12 col-sm-12 col-lg-12" id="personajeDesc">
+                        
+                          <div class="row">
+                               <div class ="col-md-6">
+                         
+                                <h4 id="name" class="centerPosition" style="margin-top:15%; ">NAME</h4>
+                                   <div id="caracteristicas"></div>
+                                                                            
+                              </div>
+                                  <div id="history" class ="col-md-6">
+                                  <h4 class="centerPosition" style="margin-top:15%; " >HISTORY</h4>
+                                      <p id="rol"></p>
+                                                              </div>   
+                                            <div class ="col-md-6" style="margin-top: 0 !important">
+                                  <h4 class="centerPosition" style=" margin-left: 12%; " >ATTACKS</h4>
+                                                <div class="row" style="align-items: center;margin-left:10%">
+                                                     <div class ="col-md-4" style="">
+                            <input id="at1" width="80%" style="border:groove; responsive" type="image"  alt="Login" src="images/icon/amporio1.PNG" />
+                                                    </div>
+                                                          <div class ="col-md-4">
+                            <input id="at2"  width="80%"  style="border:groove; " type="image"  alt="Login" src="images/icon/amporio1.PNG" />
+                                                         </div>
+                                                               <div class ="col-md-4">
+                            <input id="at3"  width="80%" style="border:groove; " type="image"  alt="Login" src="images/icon/amporio1.PNG" />
+                                                              </div>
+                                                </div>
+                                                              </div>  
+                              <div class ="col-md-6">
+                                  <h4 class="centerPosition" style="" >VIEW</h4>
+                                  
+                            <video id="ataque" width="40%" style="margin-left: 30%; border: groove;" type="video" id="image" alt="Login" src="images/Gif/amporio1.mp4" />
             
-                       </div>
-                                 <div class ="col-md-12 col-xs-12 col-sm-12 col-lg-12" id="caracteristicas">
-                                     </div>
+                                                
+                                                              </div> 
                             </div>
-                            </div>
+                           </div>
                       
                 
-                        </div>
-                        <div id ="logotipo" class ="col-xs-12 col-sm-12  col-md-12 col-lg-12">
+                      
+                        <div id ="logotipo" class =" col-md-6">
              <img class ="img-responsive imagen_bubble" src="images/MrMahuhemhai.png">
             </div>
                     </div>
                  
-                </div>
+                
             </div>
     </section>
 
@@ -183,7 +203,7 @@ initial-scale=1">
                         <h1 id="adentrate">ADENTRATE</h1>   
                     </div>
                     <div class ="col-md-3 col-xs-3 col-sm-3 col-lg-3" >
-                        <button class ="button_play2 button"  onclick="window.location.href='html/identificacion.html'" >PLAY</button>
+                        <button class ="button_play2 button"  onclick="window.location.href='html/login.html'" >PLAY</button>
                     </div>
             <div class ="col-md-3 col-xs-3 col-sm-3 col-lg-3" >
                 <img class ="img-responsive imagen_pegi"  src="images/pegi.png">
